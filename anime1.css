@@ -1,0 +1,56 @@
+body{
+    background-image:url(car1.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    padding: 10px;
+}
+.anim1 {
+width: 30%;
+border:2px solid rgba(0, 0, 0, 0.671);
+padding: 10px;
+border-radius: 5px;
+background: rgba(162, 207, 36, 0.753);
+position: relative;
+animation: mymove 8s infinite;
+text-align: center;
+}
+
+.anim1:hover {
+animation-play-state: paused;
+}
+
+@keyframes mymove {
+from {left: 0px;}
+to {left:100%;}
+}
+.div1 {
+position: relative;
+height: 200px;
+width: 200px;
+margin: 100px;
+padding: 10px;
+border: 1px solid black;
+}
+
+.div2 {
+padding: 50px;
+position: absolute;
+border: 1px solid black;
+background-color: rgba(5, 39, 133, 0.795);
+transform: rotate(45deg);
+transform-origin: 30% 85%;
+
+}
+.trans{
+width: auto;
+height: auto;
+padding: 20px;
+text-align: center;
+background-color: rgba(146, 10, 89, 0.808);
+box-sizing: border-box;
+transform: scaleX(1.5);
+margin-bottom: 300px;
+}
+.trans:hover{
+transform: translateX(100%);
+}
